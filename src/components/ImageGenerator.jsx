@@ -153,9 +153,7 @@ function ImageGenerator() {
                 prompt: adPrompt
               }],
               parameters: {
-                sampleCount: 1,
-                aspectRatio: image.imageSize?.includes('1792x1024') ? '16:9' : 
-                            image.imageSize?.includes('1024x1792') ? '9:16' : '1:1'
+                sampleCount: 1
               }
             })
           }
@@ -567,10 +565,7 @@ function ImageGenerator() {
                 }
               ],
               parameters: {
-                sampleCount: numberOfImages,
-                aspectRatio: imageSize.includes('1792x1024') ? '16:9' : 
-                            imageSize.includes('1024x1792') ? '9:16' : 
-                            '1:1'
+                sampleCount: numberOfImages
               }
             })
           }
